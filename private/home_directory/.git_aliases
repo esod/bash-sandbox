@@ -1,0 +1,9 @@
+#!/bin/sh
+alias gs="git status"
+alias gc="git commit -am"
+alias gd="git diff"
+alias gitwhat="git log --reverse --pretty=format:'%C(yellow)%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short|grep"
+alias gitmap="git log --graph --pretty=format:'<- %C(yellow)%h%Creset %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short"
+alias gco="git checkout"
+alias pull="git pull"
+alias push="git push"
