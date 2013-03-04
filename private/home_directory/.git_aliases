@@ -7,3 +7,4 @@ alias gitmap="git log --graph --pretty=format:'<- %C(yellow)%h%Creset %C(yellow)
 alias gco="git checkout"
 alias pull="git pull"
 alias push="git push"
+alias guys="gbs victor/master denis/master oleksii/master alex/master mark/master sergii/master"
