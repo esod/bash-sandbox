@@ -54,14 +54,14 @@ function bash-init {
 }
 
 # Path Modifications
-export PATH=$PATH:/Applications/acquia-drupal/drush:/Users/matt/pear/bin/:/Applications/acquia-drupal/mysql/bin/:/opt/local/bin:/opt/local/sbin:/Users/matt/Scripts/Perl
+export PATH=$PATH:/Applications/acquia-drupal/drush:/usr/bin:/Users/matt/pear/bin/:/Applications/acquia-drupal/mysql/bin/:/opt/local/bin:/opt/local/sbin:/Users/matt/Scripts/Perl
 # Using acquia drupal mysql now, to switch back to the native "real" mysql use: /usr/local/mysql/bin/
 
 #Shortcuts to commonly used directories
-alias a="cd /Users/matt/Sites/nbcsports"
+alias a="cd /Users/matt/Sites/ra"
 alias b="cd /Users/matt/Sites/UMG"
 alias c="cd /Users/matt/Sites/nbcsports/docroot/profiles/nbcsports"
-alias go:warner="cd /c/wamp/www/Warner-Common-Files/"
+alias d="drush @ra.local"
 
 #Meta: alias to reload this file
 alias s="source ~/.bash_profile"
@@ -126,6 +126,6 @@ fi
 ##
 
 # MacPorts Installer addition on 2013-02-03_at_00:54:50: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 

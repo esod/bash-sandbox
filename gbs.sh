@@ -5,26 +5,37 @@
 # Licensed under the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.  http://www.gnu.org/licenses/
-# 
 # Based on work by http://github.com/jehiah
-# this prints out some branch status (similar to the '... ahead' info you get from git status)
+# 
+# This prints out some branch status (similar to the '... ahead' info you get 
+# from git status)
 # 
 # Gives an output to the effect of:
 # Branch                   Behind          Ahead
 # origin/master            0 behind        0 ahead
-# upstream/master          0 behind        0 ahead
-# acquia/master            0 behind        0 ahead
-# acquia/rsn-stage         71 behind       0 ahead
-# acquia/rsn-prod          71 behind       0 ahead
-# rsn-v2.0.3-alpha         71 behind       0 ahead
-# acquia/rsn-hotfix        107 behind      3 ahead
+# origin/dev-branch        107 behind      3 ahead
+# upstream/master          71 behind       0 ahead
+#
+# Requirements:
+# 1. Git installed
+# 2. A unix-like environment (e.g. terminal on OSX or cygwin/git bash on windows)
+# 3. A writable /tmp/ directory
+#
+# Usage:
+# 1. Save this file anywhere 
+# 2. Checkout the git branch you wish to compare, and invoke the script 
+#   (i.e. give the command '/path/to/file/gbs.sh).  Protip: save a bash
+#   alias to the effect of <alias gbs="/path/to/file/gbs.sh">
+# 3. Takes unlimited arguments.  So if you want to compare some-remote/some-branch
+#   with your local you would type "gbs.sh some-remote/some-branch"
 remotes=( 
     origin/master
-    dev/master
-    bitbucket/master
-    github/master
     upstream/master
     acquia/master
+    acquia/staging
+    acquia/qa
+    bitbucket/master
+    github/master
     acquia/rsn-stage
     rsn-2.0.6-l
     $@
