@@ -39,18 +39,24 @@ export PERL5LIB=/Users/matt/Scripts/perl:/Users/matt/Scripts/perl/modules
 # each time a perl or bash script is added, we'll create a bash alias for it
 perl /Users/matt/Scripts/perl/private/generate_perl_aliases.pl
 perl /Users/matt/Scripts/perl/private/generate_bash_aliases.pl
-source ~/.perl_aliases
+source ~/.auto_perl_aliases
 source ~/.auto_bash_aliases
+source ~/.auto_php_aliases
 source ~/.git_aliases
 
 function perl-init {
     perl /Users/matt/Scripts/perl/private/perl-init.pl $1;
-    source ~/.perl_aliases;
+    source ~/.auto_perl_aliases;
 }
 
 function bash-init {
     perl /Users/matt/Scripts/perl/private/bash-init.pl $1;
     source ~/.auto_bash_aliases;
+}
+
+function php-init {
+    perl /Users/matt/Scripts/perl/private/php-init.pl $1;
+    source ~/.auto_php_aliases;
 }
 
 # Path Modifications
@@ -74,7 +80,7 @@ function parse_git_branch {
 function proml {
   local         RED="\[\033[0;31m\]"
   local   LIGHT_RED="\[\033[1;31m\]"
-  local      YELLOW="\[\033[0;33m\]"
+  local      YELLOW="\[\033[0;33  m\]"
   local LIGHT_GREEN="\[\033[1;32m\]"
   local       WHITE="\[\033[1;37m\]"
   local  LIGHT_GRAY="\[\033[0;37m\]"

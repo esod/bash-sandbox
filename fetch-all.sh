@@ -1,12 +1,14 @@
 #!/bin/sh
 #
-# @author: Matt Korostoff, http://mattkorostoff.com
+# @author Matt Korostoff <mkorostoff@gmail.com>
 #
-# Licensed under the GNU General Public License as published by the Free 
+# @copyright Licensed under the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.  http://www.gnu.org/licenses/
 #
 # Fetch all the remotes of everyone I merge from frequently
+#
+# @internal 'git remote update' but for a specific list of remotes.
 remotes=(
     alex
     ali
