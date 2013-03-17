@@ -9,6 +9,8 @@
 # Fetch all the remotes of everyone I merge from frequently
 #
 # @internal 'git remote update' but for a specific list of remotes.
+#
+# @category NBC
 remotes=(
     alex
     ali

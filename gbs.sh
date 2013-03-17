@@ -4,10 +4,15 @@
 #
 # @internal Compares remote branches to local branch.
 #
+# @category git
+#
 # @copyright Licensed under the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.  http://www.gnu.org/licenses/
 # Based on work by http://github.com/jehiah
+#
+# @todo use the current working directory as a context to select the right list
+# of remotes.
 # 
 # This prints out some branch status (similar to the '... ahead' info you get 
 # from git status)
@@ -38,6 +43,7 @@ remotes=(
     acquia/qa
     bitbucket/master
     github/master
+    dev/master
     acquia/rsn-stage
     rsn-2.0.6-l
     $@
