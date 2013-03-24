@@ -33,7 +33,7 @@ alias lso="ls -alG | awk '{k=0;for(i=0;i<=8;i++)k+=((substr(\$1,i+2,1)~/[rwx]/)*
 #Turn on color when listing directories
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-export PERL5LIB=/Users/matt/Scripts/perl:/Users/matt/Scripts/perl/modules
+export PERL5LIB=/Users/matt/Scripts/perl:/Users/matt/Scripts/perl/modules:/Users/matt
 
 # Perl configruation
 # each time a perl or bash script is added, we'll create a bash alias for it
