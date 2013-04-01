@@ -14,13 +14,9 @@ yellow="\033[0;33m"
 color_reset="\033[0m"
 
 #Copy the database and then wait
-echo "\n${yellow}copying database from $1 prod -> local, this may take a while${color_reset}"
+echo "\n${yellow}copying database from dev -> local, this may take a while${color_reset}"
 drush sql-sync -y @ra.dev @ra.local
 sleep 10
-
-# #Set the proper files directory
-# echo "\n\033[38;5;148m[Setting proper files directory]\033[39m"
-# drush @$1.local vset file_temporary_path "/tmp/nbcsportsdev"
 
 #Disable update module for performance reasons
 echo "\n${yellow}Disabling update module${color_reset}"
