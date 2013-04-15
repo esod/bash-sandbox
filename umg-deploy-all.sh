@@ -12,11 +12,9 @@
 yellow="\033[0;33m"
 color_reset="\033[0m"
 
-echo "${yellow}git push dev master${color_reset}"
-git push dev master
-echo "${yellow}git push bitbucket master${color_reset}"
-git push bitbucket master
-echo "${yellow}git push github master${color_reset}"
-git push github master
+echo "${yellow}git push webserver master${color_reset}"
+git push webserver master
+echo "${yellow}git push origin master${color_reset}"
+git push origin master
 echo "${yellow}git push upstream master${color_reset}"
 git push upstream master

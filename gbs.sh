@@ -39,6 +39,7 @@ remotes=(
     origin/master
     upstream/master
     acquia/master
+    webserver/master
     acquia/staging
     acquia/qa
     bitbucket/master
