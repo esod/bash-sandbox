@@ -15,7 +15,7 @@ color_reset="\033[0m"
 
 #Copy the database and then wait
 echo "\n${yellow}copying database from dev -> local, this may take a while${color_reset}"
-drush sql-sync -y @ra.dev @ra.local
+drush sql-sync -y --no-cache @ra.dev @ra.local
 sleep 10
 
 #Disable update module for performance reasons
