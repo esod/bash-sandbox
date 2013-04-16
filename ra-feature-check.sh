@@ -16,17 +16,17 @@
 #
 # Sample output:
 #     
-#	  +-------------------------------------------------------------------------------------------------------------+
-#     |  Out-of-sync in local: 3 																					|
+#     +-------------------------------------------------------------------------------------------------------------+
+#     |  Out-of-sync in local: 3                                                                                    |
 #     |  RA Article                     ra_article                     Enabled   7.x-1.0                Overridden  | 
 #     |  RA Homepage                    ra_homepage                    Enabled                          Overridden  |
 #     |  RA Webform                     ra_webform                     Enabled   7.x-1.0                Overridden  |
-#     |																												|
-#     |  Out-of-sync in dev: 1 																						|
-#     |  RA Webform                     ra_webform                     Enabled   7.x-1.0                Overridden 	|
-#     |																												|
-#     |  Out-of-sync in stage: 																						|
-#	  +--------------------------------------------------------------------------------------------------------------
+#     |                                                                                                             |
+#     |  Out-of-sync in dev: 1                                                                                      |
+#     |  RA Webform                     ra_webform                     Enabled   7.x-1.0                Overridden  |
+#     |                                                                                                             |
+#     |  Out-of-sync in stage:                                                                                      |
+#     +--------------------------------------------------------------------------------------------------------------
 
 red="\033[0;31m"
 color_reset="\033[0m"
