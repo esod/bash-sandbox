@@ -18,10 +18,13 @@
 # from git status)
 # 
 # Gives an output to the effect of:
-# Branch                   Behind          Ahead
-# origin/master            0 behind        0 ahead
-# origin/dev-branch        107 behind      3 ahead
-# upstream/master          71 behind       0 ahead
+#   
+#   +-----------------------------------------------------+
+#   | Branch                   Behind          Ahead      |
+#   | origin/master            0 behind        0 ahead    |
+#   | origin/dev-branch        107 behind      3 ahead    |
+#   | upstream/master          71 behind       0 ahead    |
+#   +-----------------------------------------------------+
 #
 # Requirements:
 # 1. Git installed
@@ -41,7 +44,6 @@ remotes=(
     acquia/master
     webserver/master
     acquia/staging
-    acquia/qa
     bitbucket/master
     github/master
     dev/master

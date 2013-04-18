@@ -39,7 +39,7 @@ environments=(
 
 for env in ${environments[@]}
 do
-broken=$(drush @ra.${env} features-diff|grep 'Overridd\|Needs'|sed 's/Needs/Needs Review/')
+broken=$(drush @ra.${env} features-diff|grep 'Overr\|Needs'|sed 's/Needs/Needs Review/')
 printf "\n${red}Out-of-sync in ${env}: ${color_reset}"
 printf "$broken"|grep -c ''
 printf "$broken\n"
