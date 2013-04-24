@@ -20,11 +20,11 @@ sleep 10
 
 #Disable update module for performance reasons
 echo "\n${yellow}Disabling update module${color_reset}"
-drush @ra.local dis -y update
+drush @ra.local dis -y update admin_menu
 
 #Enable stage_file_proxy, this is what gives us the images
 echo "\n${yellow}Enabling stage_file_proxy${color_reset}"
-drush @ra.local en -y stage_file_proxy module_builder devel_debug_log
+drush @ra.local en -y stage_file_proxy module_builder devel_debug_log toolbar
 
 #Clear the cache
 echo "\n${yellow}Clearing cache${color_reset}"
