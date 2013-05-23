@@ -45,10 +45,14 @@ remotes=(
     webserver/master
     acquia/staging
     bitbucket/master
-    github/master
+    # github/master
     dev/master
     acquia/rsn-stage
-    rsn-2.0.6-l
+    darby/master
+    jason/master
+    malcolm/master
+    rich/master
+    george/master
     $@
 )
 #Print out column headers "Branch", "Ahead", and "Behind"

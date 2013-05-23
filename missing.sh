@@ -2,17 +2,11 @@
 #
 # @author Matt Korostoff <mkorostoff@gmail.com>
 #
-# @internal git push to origin, upstream.
+# @internal 
 #
-# @category umg
+# @category 
 #
 # @copyright Licensed under the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.  http://www.gnu.org/licenses/
-yellow="\033[0;33m"
-color_reset="\033[0m"
-
-echo "${yellow}git push origin master${color_reset}"
-git push origin master
-echo "${yellow}git push upstream master${color_reset}"
-git push upstream master
+git rev-list --left-only --pretty="%C(white)>%C(yellow)%s %C(white)by %C(blue)%cn" ...$1|sed 's/commit [0-9a-fA-F]*$//g'|grep '.'
