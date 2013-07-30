@@ -47,12 +47,16 @@ remotes=(
     bitbucket/master
     # github/master
     dev/master
+    stage/master
+    prod/master
     acquia/rsn-stage
     darby/master
     jason/master
     malcolm/master
     rich/master
     george/master
+    rsn-2.0.9-l
+    rsn-2.0.9-m
     $@
 )
 #Print out column headers "Branch", "Ahead", and "Behind"

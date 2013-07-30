@@ -66,10 +66,9 @@ export PATH=$PATH:/Applications/acquia-drupal/drush:/usr/bin:/Users/matt/pear/bi
 #Shortcuts to commonly used directories
 alias a="cd /Users/matt/Sites/ra"
 alias b="cd /Users/matt/Sites/UMG"
-alias c="cd /Users/matt/Sites/nbcsports/docroot/profiles/nbcsports"
-alias d="drush @ra.local"
-alias dd="drush @ra.dev"
-alias ddd="drush @ra.stage"
+alias c="cd /Users/matt/Sites/breakfastproject"
+alias d="cd /Users/matt/Sites/nbcsports"
+alias e="cd /Users/matt/Sites/git-production/sites/default"
 
 #Meta: alias to reload this file
 alias s="source ~/.bash_profile"
