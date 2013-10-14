@@ -4,22 +4,17 @@
 #
 # @internal backup to NAS device
 #
-# @category 
+# @category AAA
 #
 # @copyright Licensed under the GNU General Public License as published by the Free 
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.  http://www.gnu.org/licenses/
 #
-# @to-do
-# 
-# 1. check if server is active
-# 2. do an incremental backup ala http://www.mikerubel.org/computers/rsync_snapshots/#Incremental
-# 3. run on chron daily
-# 
+
 server_response=$(nc -z hamburglar 22);
 if [ "${server_response}" = 'Connection to hamburglar 22 port [tcp/ssh] succeeded!' ]
 then
-	echo 'kaaaa'
+	rsync -av --exclude=Downloads --exclude=Desktop/excluded --exclude=Library --exclude=Torrents --exclude=Trash /Users/matt/* root@hamburglar:/volume2/matt/rsync/matt
 else
 	echo 'server failed'
 fi

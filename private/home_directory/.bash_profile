@@ -42,7 +42,9 @@ perl /Users/matt/Scripts/perl/private/generate_bash_aliases.pl
 source ~/.auto_perl_aliases
 source ~/.auto_bash_aliases
 source ~/.auto_php_aliases
+source ~/.auto_casper_aliases
 source ~/.git_aliases
+source ~/Misc/git-autocomplete.bash
 
 function perl-init {
     perl /Users/matt/Scripts/perl/private/perl-init.pl $1;
@@ -60,15 +62,17 @@ function php-init {
 }
 
 # Path Modifications
-export PATH=$PATH:/Applications/acquia-drupal/drush:/usr/bin:/Users/matt/pear/bin/:/Applications/acquia-drupal/mysql/bin/:/opt/local/bin:/opt/local/sbin:/Users/matt/Scripts/Perl
-# Using acquia drupal mysql now, to switch back to the native "real" mysql use: /usr/local/mysql/bin/
+export PATH=$PATH:/Applications/acquia-drupal/drush:/usr/bin:/Users/matt/pear/bin/:/usr/local/mysql/bin:/opt/local/bin:/opt/local/sbin:/Users/matt/Scripts/Perl
+# Using the native mac mysql.  To use acquia dev desktop use /Applications/acquia-drupal/mysql/bin/
 
 #Shortcuts to commonly used directories
-alias a="cd /Users/matt/Sites/ra"
+alias a="cd /Users/matt/Sites/opsumit"
 alias b="cd /Users/matt/Sites/UMG"
 alias c="cd /Users/matt/Sites/breakfastproject"
 alias d="cd /Users/matt/Sites/nbcsports"
 alias e="cd /Users/matt/Sites/git-production/sites/default"
+alias vhosts="sublime /etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="sublime /etc/hosts"
 
 #Meta: alias to reload this file
 alias s="source ~/.bash_profile"
@@ -136,3 +140,5 @@ fi
 # export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+
+export PATH="$PATH:/Applications/acquia-drupal/drush"
